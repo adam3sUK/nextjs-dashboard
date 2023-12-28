@@ -1,4 +1,7 @@
 // This file contains placeholder data that you'll be replacing with real data in the Data Fetching chapter:
+
+import { Customer } from "./definitions";
+
 // https://nextjs.org/learn/dashboard-app/fetching-data
 const users = [
   {
@@ -9,7 +12,7 @@ const users = [
   },
 ];
 
-const customers = [
+const customers: Customer[] = [
   {
     id: '3958dc9e-712f-4377-85e9-fec4b6a6442a',
     name: 'Delba de Oliveira',
