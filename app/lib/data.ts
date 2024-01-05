@@ -94,11 +94,15 @@ export async function fetchCardData() {
 }
 
 const ITEMS_PER_PAGE = 6;
+
 export async function fetchFilteredInvoices(
   query: string,
   currentPage: number,
 ) {
   noStore();
+
+  console.log('Fetching invoices...');
+  await new Promise((resolve) => setTimeout(resolve, 3000));
 
   const offset = (currentPage - 1) * ITEMS_PER_PAGE;
 
